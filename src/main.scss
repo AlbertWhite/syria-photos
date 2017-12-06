@@ -1,3 +1,19 @@
-body{
-	color: red;
+html, body{
+  margin: 0px;
+}
+
+.img-div{
+  width: 976px;
+  height: auto;
+  position: relative;
+
+  img{
+    position: absolute;
+  }
+  img:nth-child(1){
+    left: 0;
+  }
+  img:nth-child(2){
+    right: 0;
+  }
 }
