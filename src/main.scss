@@ -2,6 +2,8 @@ html, body{
   margin: 0px;
   background-color: #050202;
   font-family: arial;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .title-container{
@@ -57,4 +59,13 @@ html, body{
   position: absolute;
   bottom: 0px;
   margin-left: 40%;
+}
+
+.carousel-container{
+  display: flex;
+  width: 2000px;
+  transition: all 0.5s ease-out;
+  .one-carousel-container{
+    
+  }
 }
