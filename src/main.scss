@@ -1,16 +1,35 @@
+@font-face {
+  font-family: helvetica;
+  src: url(./fonts/helvetica.woff);
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url(./fonts/helvetica.eot);
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url(./fonts/helvetica.ttf);
+}
+
 html, body{
   margin: 0px;
   background-color: #050202;
-  font-family: arial;
+  font-family: helvetica;
   height: 100%;
   overflow-x: hidden;
 }
 
 .title-container{
   text-align: center;
+  padding-top: 20px;
+  color: white;
   .title{
-    color: white;
     opacity: 0.8;
+  }
+  p{
+    margin: 5px auto;
   }
 }
 
@@ -19,7 +38,7 @@ html, body{
   height: auto;
   position: relative;
   display: block;
-  margin: 70px auto;
+  margin: 15px auto;
   .img-div{
     position: absolute;
     height: 550px;
@@ -37,7 +56,7 @@ html, body{
   }
 }
 
-.img-container.school{
+.one-carousel-container:nth-child(1){
   .img-div:nth-child(1){
     background-image: url('./photos/1-1.jpg');
   }
@@ -46,7 +65,7 @@ html, body{
   }
 }
 
-.img-container.citadel{
+.one-carousel-container:nth-child(2){
   .img-div:nth-child(1){
     background-image: url('./photos/2-1.jpg');
   }
@@ -55,10 +74,58 @@ html, body{
   }
 }
 
+.one-carousel-container:nth-child(3){
+  .img-div:nth-child(1){
+    background-image: url('./photos/3-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/3-2.jpg');
+  }
+}
+
+.one-carousel-container:nth-child(4){
+  .img-div:nth-child(1){
+    background-image: url('./photos/4-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/4-2.jpg');
+  }
+}
+
+.one-carousel-container:nth-child(5){
+  .img-div:nth-child(1){
+    background-image: url('./photos/5-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/5-2.jpg');
+  }
+}
+
+.one-carousel-container:nth-child(6){
+  .img-div:nth-child(1){
+    background-image: url('./photos/6-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/6-2.jpg');
+  }
+}
+
 .carousel-controller{
   position: absolute;
-  bottom: 0px;
-  margin-left: 40%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  button{
+    width: 80px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    padding: 9px;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+  }
 }
 
 .carousel-container{
@@ -66,6 +133,13 @@ html, body{
   width: 2000px;
   transition: all 0.5s ease-out;
   .one-carousel-container{
-    
+    .bar{
+      position: absolute;
+      width: 10px;
+      height: 550px;
+      background: red;
+      opacity: 0.8;
+      left: 50%;
+    }
   }
 }

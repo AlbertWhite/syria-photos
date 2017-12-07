@@ -14,7 +14,7 @@ gulp.task('serve', ['parseScss','parseJs','parseHtml'],function(){
 
 	browserSync({
 	  server:{
-	    baseDir: './dist'
+	    baseDir: './docs'
 	  }
 	});
 
@@ -30,7 +30,7 @@ gulp.task('parseScss',function(){
 	gulp.src(['./src/*.scss'])
 	.pipe(sass().on('error', sass.logError))
 	.pipe(cleanCSS())
-	.pipe(gulp.dest('./dist'));
+	.pipe(gulp.dest('./docs'));
 
 	reload();
 
@@ -39,7 +39,7 @@ gulp.task('parseScss',function(){
 gulp.task('parseHtml',function(){
 
 	gulp.src('./index.html')
-	.pipe(gulp.dest('./dist'))
+	.pipe(gulp.dest('./docs'))
 
 	reload();
 
@@ -53,7 +53,7 @@ gulp.task('parseJs',function(){
 		presets: ['env']
 	}))
 	.pipe(uglify())
-	.pipe(gulp.dest('./dist'))
+	.pipe(gulp.dest('./docs'))
 
 		reload();
 
