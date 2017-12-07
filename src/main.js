@@ -36,12 +36,19 @@ $(document).ready(() => {
 	//set one carousel width
 	var window_width = setWindowWidth();
 	var currentCarousel = 1;
+	var bgColor = 'rgb(0,0,0)';
+	$('.body').css('background-color', bgColor);
 
 	$('.title-container .description').text(PHOTOS[currentCarousel - 1].name);
 
 	//detect mousemove
   $(".img-div").mousemove((e) => {
     var ratio = e.pageX - parseInt($(".img-container").css("margin-left"));
+    
+    bgColor = `rgb(${parseInt((976 - ratio)/10)},0,0)`
+		$('body').css('background-color', bgColor);
+
+
     $('.img-1').css('width',`${ratio}px`);
     $('.img-2').css('width',`${976 - ratio}px`);
   	$('.bar').css('left', `${ratio}px`);
@@ -93,6 +100,9 @@ $(document).ready(() => {
   	$('.img-1').css('width','50%');
   	$('.img-2').css('width','50%');
   	$('.bar').css('left', '50%');
+
+  	var bgColor = 'rgb(0,0,0)';
+		$('body').css('background-color', bgColor);
 
 		$('.title-container .description').text(PHOTOS[currentCarousel - 1].name);
 

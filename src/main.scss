@@ -143,3 +143,18 @@ html, body{
     }
   }
 }
+
+.photo-source{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  font-size: 13px;
+  p{
+    margin: 3px auto;
+    opacity: 0.5;
+  }
+  a{
+    color: white;
+  }
+}
