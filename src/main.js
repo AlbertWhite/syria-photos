@@ -1,11 +1,11 @@
-$(document).ready(function(){
+$(document).ready(() => {
 
-  $(".img-div").mousemove(function(e){
-    var ratio = e.pageX;
-    $('.img-1').css('clip',"rect(0, ratio+'px',550px, 0px)");
-    console.log($('.img-1').css('clip'));
-    $('.img-2').css('clip',"rect(0, 976px, 550px, ratio+'px')");
-  });
-
+	
+	
+  // $(".img-div").mousemove((e) => {
+  //   var ratio = e.pageX - parseInt($(".img-container").css("margin-left"));
+  //   $('.img-1').css('width',`${ratio}px`);
+  //   $('.img-2').css('width',`${976 - ratio}px`);
+  // });
 
 });

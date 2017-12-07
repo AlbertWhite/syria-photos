@@ -1,19 +1,60 @@
 html, body{
   margin: 0px;
+  background-color: #050202;
+  font-family: arial;
 }
 
-.img-div{
+.title-container{
+  text-align: center;
+  .title{
+    color: white;
+    opacity: 0.8;
+  }
+}
+
+.img-container{
   width: 976px;
   height: auto;
   position: relative;
-
-  img{
+  display: block;
+  margin: 70px auto;
+  .img-div{
     position: absolute;
+    height: 550px;
+    width: 976px;
   }
-  img:nth-child(1){
+  .img-div:nth-child(1){
     left: 0;
+    background-position: left;
+    width: 50%;
   }
-  img:nth-child(2){
+  .img-div:nth-child(2){
     right: 0;
+    background-position: right;
+    width: 50%;
   }
+}
+
+.img-container.school{
+  .img-div:nth-child(1){
+    background-image: url('./photos/1-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/1-2.jpg');
+  }
+}
+
+.img-container.citadel{
+  .img-div:nth-child(1){
+    background-image: url('./photos/2-1.jpg');
+  }
+  .img-div:nth-child(2){
+    background-image: url('./photos/2-2.jpg');
+  }
+}
+
+.carousel-controller{
+  position: absolute;
+  bottom: 0px;
+  margin-left: 40%;
 }
