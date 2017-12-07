@@ -1,7 +1,9 @@
 ### Before & After in Syria
 An interactive photo checker to check the difference of one place before and after the war.
 
-It is a bit sad to see how the cultural relics and people life are ruined. Hope for peace.
+Here is the link: https://albertwhite.github.io/syria-photos/
+
+It is sad to see how the cultural relics and people life are ruined. Hope for peace.
 
 ![alt tag](https://raw.githubusercontent.com/AlbertWhite/syria-photos/master/capture.JPG) 
 
