@@ -1,1 +1,0 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var PHOTOS=[{name:"School","first-time":"2001","last-time":"2003"}];exports.default=PHOTOS;
